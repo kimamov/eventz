@@ -14,7 +14,8 @@
     "format": "biome check --write .",
     "db:generate": "bun --filter @eventz/db db:generate",
     "db:migrate": "bun --filter @eventz/db db:migrate",
-    "db:studio": "bun --filter @eventz/db db:studio"
+    "db:studio": "bun --filter @eventz/db db:studio",
+    "db:seed": "bun --filter @eventz/db db:seed"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.5"
