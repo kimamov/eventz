@@ -1,2 +1,7 @@
-export type { Attendee, EventRecord, EventSummary, ImageRecord } from './event.schema'
-export { AttendeeSchema, EventSchema, EventSummarySchema, ImageSchema } from './event.schema'
+export type { Attendee, EventCard as EventSummary, EventRecord, ImageRecord } from './event.schema'
+export {
+  AttendeeSchema,
+  EventCardSchema as EventSummarySchema,
+  EventDetailSchema as EventSchema,
+  ImageSchema,
+} from './event.schema'
