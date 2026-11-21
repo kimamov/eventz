@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.output/
+.vinxi/
+.tanstack/
+*.tsbuildinfo
+
+.env
+.env.*
+!.env.example
+
+.DS_Store
+*.log
+coverage/
