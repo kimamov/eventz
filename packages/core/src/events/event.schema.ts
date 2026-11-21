@@ -41,7 +41,6 @@ export const EventDetailSchema = z.object({
   startsAt: z.iso.datetime(),
   endsAt: z.iso.datetime(),
   timezone: TimeZoneSchema,
-  
 })
 
 export type EventDetail = z.infer<typeof EventDetailSchema>

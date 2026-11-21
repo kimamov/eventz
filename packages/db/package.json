@@ -1,0 +1,23 @@
+{
+  "name": "@eventz/db",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "db:generate": "bun --bun --env-file=../../.env drizzle-kit generate",
+    "db:migrate": "bun --bun --env-file=../../.env drizzle-kit migrate",
+    "db:studio": "bun --bun --env-file=../../.env drizzle-kit studio"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.4",
+    "postgres": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "drizzle-kit": "^0.31.11",
+    "typescript": "^6.0.2"
+  }
+}

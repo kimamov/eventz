@@ -11,7 +11,10 @@
     "build": "bun --filter '*' build",
     "typecheck": "bun --filter '*' typecheck",
     "lint": "biome check .",
-    "format": "biome check --write ."
+    "format": "biome check --write .",
+    "db:generate": "bun --filter @eventz/db db:generate",
+    "db:migrate": "bun --filter @eventz/db db:migrate",
+    "db:studio": "bun --filter @eventz/db db:studio"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.5"
